@@ -1,0 +1,168 @@
+@import 'base.less';
+html{
+    //100/375*100
+    font-size: 26.66667vw;
+}
+body{
+    font-size: .14rem;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.header {
+    height: 0.4rem;
+    background-color: #ccc;
+    display: flex;
+    .left{
+        display: flex;
+        width: 0.4rem;
+        height: 0.4rem;
+        justify-content: center;
+        align-items: center;
+        a{
+            width: 0.2rem;
+            height: 0.2rem;
+            background-image:url("../images/sprites.png");
+            background-size: 2rem 2rem;
+            background-position: -0.2rem 0;
+            
+        }
+    }
+    .center{ 
+        flex:1;
+        form{
+          position: relative;
+
+        i{ position: absolute;
+            top: 0.1rem;
+            left: 0.1rem;
+            width: 0.2rem;
+            height: 0.2rem;
+            background-image:url("../images/sprites.png");
+            background-size: 2rem 2rem;
+            background-position: -0.6rem -1.1rem;
+        }
+        input{
+            margin-top: 0.05rem;
+            width: 100%;
+            height: 0.3rem;
+            border-radius: 0.15rem;
+            font-size: 0.14rem;
+            padding-left: .3rem;
+        }
+    }
+    }
+    .right{
+        display: flex;
+        width: 0.4rem;
+        height: 0.4rem;
+        justify-content: center;
+        align-items: center;
+        a{
+            width: 0.2rem;
+            height: 0.2rem;
+            background-image:url("../images/sprites.png");
+            background-size: 2rem 2rem;
+            background-position: -0.6rem 0;
+            
+        }
+    }
+}
+.main{
+   
+    flex: 1;
+    // background-color: pink;
+    display: flex;
+
+    .category-left{
+        width: 0.85rem;
+        overflow: hidden;
+        ul{
+            li{
+               a{
+                   display: block;
+                   width: 100%;
+                   height: 0.46rem;
+                   background-color: #eee;
+                   text-align: center;
+                   line-height:.46rem;
+
+               } 
+               &.active {
+                   a{
+                       background-color: #fff;
+                       color: red;
+                   }
+               }
+            }
+        }
+
+    }
+        // // 分类右侧样式
+        // .category-right {
+        //     flex: 1;
+        //     overflow: hidden;
+        //     padding: .07rem;
+    
+        //     .banner {
+        //         img {
+        //             width: 100%;
+        //         }
+        //     }
+    
+        //     #branchList {
+    
+        //         // 每个品牌
+        //         .jd-brand {
+    
+        //             // 品牌标题
+        //             h4 {
+        //                 line-height: .4rem;
+        //             }
+    
+        //             // 品牌图标列表
+        //             ul {
+        //                 display: flex;
+        //                 // 父元素设置换行
+        //                 flex-wrap: wrap;
+    
+        //                 li {
+        //                     width: 33.33%;
+    
+        //                     a {
+        //                         display: flex;
+        //                         // 垂直排列图片和文字
+        //                         flex-direction: column;
+        //                         // 设置图片和文字居中
+        //                         justify-content: center;
+        //                         align-items: center;
+    
+        //                         img {
+        //                             width: .7rem;
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+   
+}
+.footer{
+    height: 0.5rem;
+    background-color: #ccc;
+    ul{
+      display: flex;
+
+        li{
+         width: 25%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         img{
+             width: .75rem;
+             height: .5rem;
+         }
+        }
+    }
+}
